@@ -14,4 +14,4 @@ def home():
     return resp
 
 if __name__ == '__main__':
-    app.run(host='192.168.29.37', debug=False,threaded=False)
+    app.run(host='0.0.0.0', debug=False,threaded=False)
