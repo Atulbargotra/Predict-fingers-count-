@@ -1,6 +1,5 @@
 from keras.models import load_model
 import numpy as np
-import copy
 import cv2
 class model:
     def __init__(self):
