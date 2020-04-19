@@ -7,7 +7,7 @@ content_type = 'image/jpeg'
 headers = {'content-type': content_type}
 def sendtoserver(frame):
     global headers
-    r, image = cv2.imencode('.jpg', frame)
+    _, image = cv2.imencode('.jpg', frame)
     response = requests.post("http://0.0.0.0:5000/", data=image.tostring(), headers=headers)
     return response 
 while True:
