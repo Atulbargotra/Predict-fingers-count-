@@ -1,8 +1,6 @@
 from keras.models import load_model
 import numpy as np
-import copy
 import cv2
-import numpy
 class model:
     def __init__(self):
         self.classes = 'NONE ONE TWO THREE FOUR FIVE'.split()
