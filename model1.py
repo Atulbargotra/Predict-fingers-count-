@@ -1,7 +1,7 @@
 from keras.models import load_model
 import numpy as np
 import cv2
-def binaryMask(self,img):
+def binaryMask(img):
     img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     img = cv2.GaussianBlur(img, (7,7), 3)
     img = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 11, 2)
