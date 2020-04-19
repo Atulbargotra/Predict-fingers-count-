@@ -1,4 +1,4 @@
-from flask import Flask, url_for, send_from_directory, request
+from flask import Flask, request
 from model1 import model
 model_ob = model()
 import numpy as np
